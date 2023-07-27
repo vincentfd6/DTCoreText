@@ -9,13 +9,14 @@
 #import "DTCSSStylesheet.h"
 #import "DTCSSListStyle.h"
 
+#if SWIFT_PACKAGE && !(defined(SWIFTPM_MODULE_BUNDLE))
+#import "DTBundleHelper.h"
+#endif
+
 #import "DTHTMLElement.h"
 #import "NSScanner+HTML.h"
 #import "NSString+CSS.h"
 #import "NSString+HTML.h"
-
-
-
 
 @implementation DTCSSStylesheet
 {
