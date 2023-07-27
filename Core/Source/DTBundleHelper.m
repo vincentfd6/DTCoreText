@@ -15,7 +15,7 @@ NSBundle* SWIFTPM_MODULE_BUNDLE() {
 
     NSArray<NSURL*> *candidates = @[
         NSBundle.mainBundle.resourceURL,
-        [NSBundle bundleForClass:[FMPBundleHelper class]].resourceURL,
+        [NSBundle bundleForClass:[DTBundleHelper class]].resourceURL,
         NSBundle.mainBundle.bundleURL
     ];
 
